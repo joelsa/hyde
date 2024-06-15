@@ -17,6 +17,7 @@
 /*
  * Contents
  *
+ * Fonts
  * Global resets
  * Sidebar
  * Container
@@ -24,6 +25,19 @@
  * Themes
  */
 
+/* 
+ * Fonts
+ * 
+ *
+ */
+
+@font-face { 
+  font-family: "Brix Sans";
+  font-style: bold;
+  font-weight: 700;
+  src: 
+    url(/Brix_Sans_Bold.ttf) format("truetype");
+}
 
 /*
  * Global resets
@@ -66,8 +80,16 @@ html {
     left: 0;
     bottom: 0;
     width: 18rem;
-    text-align: left;
+    /*text-align: left;*/
   }
+}
+
+/* Sidebar images */
+.sidebar img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /* Sidebar links */
@@ -79,7 +101,8 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
+  font-family: "Brix Sans", bold;
+  font-weight: bold;
   font-size: 3.25rem;
 }
 
